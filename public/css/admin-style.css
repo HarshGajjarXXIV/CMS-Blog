@@ -1,0 +1,41 @@
+/* Header */
+	.navbar {
+		border-radius: 0px;
+	}
+	.navbar-brand {
+	    width: 125px;
+	}
+	.navbar-brand:hover,
+	.navbar-brand:focus {
+	    opacity: 0.5;
+	}
+
+	.navbar-inverse .navbar-toggle {
+	  border-color: transparent;
+	}
+/* End Header */
+
+.submit-form {
+	margin-top: 20px;
+}
+
+img {
+	margin-right: auto;
+  	margin-left: auto;
+	max-width: 100%;
+	height: auto;
+	border-radius: 3px;
+}
+
+.body {
+	font-size: 18px;
+}
+
+p {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+div.mce-fullscreen {
+    z-index: 1100;
+}
