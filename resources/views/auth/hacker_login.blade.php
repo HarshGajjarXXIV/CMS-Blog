@@ -32,7 +32,7 @@
 
           <div class="panel-body">
 
-            <form class="form-horizontal" role="form" method="POST" action="{{ route('exploit.login.submit') }}">
+            <form class="form-horizontal" role="form" method="POST" action="{{ route('admin.login.submit') }}">
               {{ csrf_field() }}
 
               <div class="form-group{{ $errors->has('user') ? ' has-error' : '' }}">

@@ -224,7 +224,7 @@ class AdminController extends Controller
 
             $filename = $request->profile_pic->getClientOriginalName();
             $location = public_path('images/author/'.$filename);
-            Image::make($image)->resize(720, 720)->save($location);
+            Image::make($image)->resize(300, 300)->save($location);
             $hacker->profile_pic = $filename;
         }
 
@@ -238,7 +238,7 @@ class AdminController extends Controller
             $image =  $request->file('profile_pic');
             $filename = $request->profile_pic->getClientOriginalName();
             $location = public_path('images/author/'.$filename);
-            Image::make($image)->resize(720, 720)->save($location);
+            Image::make($image)->resize(300, 300)->save($location);
 
             $hacker->profile_pic = $filename;
         }

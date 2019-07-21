@@ -20,7 +20,7 @@ class RedirectIfAuthenticated
         switch ($guard) {
             case 'hacker':
                 if (Auth::guard($guard)->check()) {
-                    return redirect()->route('exploit.index');
+                    return redirect()->route('admin.index');
                 }
                 break;
             

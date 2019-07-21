@@ -66,8 +66,8 @@
 				<td>{{ $post->posted_by }}</td>
 				<td>{{ $post->views }}</td>
 				<td>
-					<a href="{{ route('exploit.show', $post->urltext) }}" class="btn btn-primary btn-sm" style="margin-top: 1px;"><i class='fa fa-file'></i></a>
-					<a href="{{ route('exploit.edit', $post->urltext) }}" class="btn btn-success btn-sm" style="margin-top: 1px;"><i class='fa fa-pencil'></i></a>
+					<a href="{{ route('admin.show', $post->urltext) }}" class="btn btn-primary btn-sm" style="margin-top: 1px;"><i class='fa fa-file'></i></a>
+					<a href="{{ route('admin.edit', $post->urltext) }}" class="btn btn-success btn-sm" style="margin-top: 1px;"><i class='fa fa-pencil'></i></a>
 				</td>
 			</tr>
 			@endforeach

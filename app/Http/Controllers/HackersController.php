@@ -108,7 +108,7 @@ class HackersController extends Controller
       Session::flash('success', 'The post has been saved successfully.');
 
       //redirect
-      return redirect()->route('exploit.show',$post->urltext);
+      return redirect()->route('admin.show',$post->urltext);
     }
 
 
@@ -256,7 +256,7 @@ class HackersController extends Controller
       Session::flash('success', 'The post has been updated successfully.');
 
       //redirect
-      return redirect()->route('exploit.show',$post->urltext);
+      return redirect()->route('admin.show',$post->urltext);
 
     }
 
@@ -277,7 +277,7 @@ class HackersController extends Controller
       $post->delete();
 
       Session::flash('success', 'The post has been deleted successfully');
-      return redirect()->route('exploit.index');
+      return redirect()->route('admin.index');
     }
 
     public function messages()

@@ -23,35 +23,35 @@ Route::get('tag/{name}', 'PagesController@tag')->name('tag');
 Route::get('search', 'PagesController@result')->name('result');
 
 //Admin Auth Routes
-Route::get('exploit/login', 'Auth\HackersLoginController@showLogin')->name('exploit.login');
-Route::post('exploit/login', 'Auth\HackersLoginController@login')->name('exploit.login.submit');
-Route::get('exploit/logout', 'Auth\HackersLoginController@logout')->name('exploit.logout');
+Route::get('admin/login', 'Auth\HackersLoginController@showLogin')->name('admin.login');
+Route::post('admin/login', 'Auth\HackersLoginController@login')->name('admin.login.submit');
+Route::get('admin/logout', 'Auth\HackersLoginController@logout')->name('admin.logout');
 
 //Categories Management Routes
-Route::resource('exploit/categories', 'CategoryController', ['except' => ['create','destroy']]);
+Route::resource('admin/categories', 'CategoryController', ['except' => ['create','destroy']]);
 
 //Tags Management Routes
-Route::resource('exploit/tags', 'TagController', ['except' => ['create']]);
+Route::resource('admin/tags', 'TagController', ['except' => ['create']]);
 
 //Admins Management Routes
-Route::resource('exploit/admins', 'AdminController');
-Route::get('exploit/password', 'AdminController@password')->name('admins.password');
-Route::post('exploit/password', 'AdminController@passwordUpdate')->name('password.update');
+Route::resource('admin/admins', 'AdminController');
+Route::get('admin/password', 'AdminController@password')->name('admins.password');
+Route::post('admin/password', 'AdminController@passwordUpdate')->name('password.update');
 
 //Messages Route
-Route::get('exploit/messages', 'HackersController@messages')->name('messages.index');
+Route::get('admin/messages', 'HackersController@messages')->name('messages.index');
 Route::post('messages', 'MessagesController@store')->name('messages.store');
 Route::delete('messages/{id}', 'MessagesController@destroy')->name('messages.destroy');
 
 //Statistics Route
-Route::get('exploit/statistics', 'HackersController@statistics')->name('statistics.index');
+Route::get('admin/statistics', 'HackersController@statistics')->name('statistics.index');
 
 //Comments Route
 Route::post('comments/{post_id}', 'CommentsController@store')->name('comments.store');
 Route::delete('comments/{id}', 'CommentsController@destroy')->name('comments.destroy');
 
 //Admin Pages Routes
-Route::resource('exploit', 'HackersController');
+Route::resource('admin', 'HackersController');
 
 //User Display Post Route(Do not move this) 
 Route::get('{urltext}', 'PagesController@post')->name('post');

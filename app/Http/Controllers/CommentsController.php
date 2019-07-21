@@ -113,6 +113,6 @@ class CommentsController extends Controller
 
         Session::flash('success', 'Comment has been deleted successfully');
 
-        return redirect()->route('exploit.show', $urltext);
+        return redirect()->route('admin.show', $urltext);
     }
 }

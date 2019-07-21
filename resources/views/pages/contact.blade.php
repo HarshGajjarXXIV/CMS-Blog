@@ -4,24 +4,8 @@
 
 @section('metatags')
 
-  <meta name="description" content="If you have any questions or suggestions, we are always ready to help you. You can contact us at contact@technosploit.com or you can directly leave a message via form." />
-  <meta name="keywords" content="Technosploit, Contact, Contact Us, Team" />
-
-  <meta property="og:locale" content="en_US"/>
-  <meta property="og:type" content="article" />
-  <meta property="og:title" content="Contact Us | Technosploit" />
-  <meta property="og:image" content="{{ asset('images/assets/bg_img.jpg') }}" />
-  <meta property="og:description" content="If you have any questions or suggestions, we are always ready to help you. You can contact us at contact@technosploit.com or you can directly leave a message via form." />
-  <meta property="og:url" content="{{ Request::url() }}" />
-  <meta property="og:site_name" content="Technosploit"/>
-  <meta property="fb:app_id" content="966242223397117" />
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:description" content="If you have any questions or suggestions, we are always ready to help you. You can contact us at contact@technosploit.com or you can directly leave a message via form." />
-  <meta name="twitter:title" content="Contact Us | Technosploit" />
-  <meta name="twitter:image" content="{{ asset('images/assets/bg_img.jpg') }}" />
-  <meta name="twitter:site" content="@technosploit" />
-  <meta name="twitter:url" content="{{ Request::url() }}" />
+  <meta name="description" content="Conact of CMS blog" />
+  <meta name="keywords" content="CMS, blog, Contact, Contact Us, Team" />
 
 @endsection
 

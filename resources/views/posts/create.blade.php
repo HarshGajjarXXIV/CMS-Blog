@@ -11,7 +11,7 @@
 	<div class="col-md-10 col-md-offset-1">
 		<div class="jumbotron">
 
-			{{ Form::open(array('route' => 'exploit.store', 'files' => true)) }}
+			{{ Form::open(array('route' => 'admin.store', 'files' => true)) }}
 
 				{{ Form::label('title','Title') }}
 				{{ Form::text('title', null, array('class' => 'form-control', 'required' => '')) }}

@@ -9,7 +9,7 @@
 @section('main')
 
 <div class="row">
-	{{ Form::model($post, ['route' => ['exploit.update', $post->id], 'method' => 'PUT', 'files' => true]) }}
+	{{ Form::model($post, ['route' => ['admin.update', $post->id], 'method' => 'PUT', 'files' => true]) }}
 	<div class="col-md-8">
 		<div class="jumbotron">
 
@@ -75,7 +75,7 @@
 
 			<div class="row">
 				<div class="col-md-6">
-					<a href="{{ route('exploit.show', $post->urltext) }}" class="btn btn-danger btn-block" style="margin-top: 5px;">Cancel</a>
+					<a href="{{ route('admin.show', $post->urltext) }}" class="btn btn-danger btn-block" style="margin-top: 5px;">Cancel</a>
 				</div>
 				<div class="col-md-6">
 					{{ Form::submit('Save', array('class' => 'btn btn-success btn-block', 'style' => 'margin-top: 5px')) }}

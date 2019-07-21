@@ -7,7 +7,7 @@
 	<div class="row">
 		<div class="col-md-12">
 			<div class="jumbotron" style="text-align: center;">
-				<h3>Technosploit Statistics</h3>
+				<h3>Blog Statistics</h3>
 				<br />
 				<p>Number of Total Posts <b>{{ $posts->count() }}</b></p>
 				<p>Number of Categories <b>{{ $categories->count() }}</b></p>

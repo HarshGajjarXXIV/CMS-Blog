@@ -14,7 +14,7 @@
 		@endif
 	</div>
 	<div class="col-md-2">
-		<a href="{{ route('exploit.create') }}" class="btn btn-primary btn-block" style="margin-top: 20px">Create Post</a>
+		<a href="{{ route('admin.create') }}" class="btn btn-primary btn-block" style="margin-top: 20px">Create Post</a>
 	</div>
 
 </div>
@@ -56,8 +56,8 @@
 							<td>{{ $post->vpw }}</td>
 						@endif
 						<td>
-							<a href="{{ route('exploit.show', $post->urltext) }}" class="btn btn-primary btn-sm" style="margin-top: 1px;"><i class='fa fa-file'></i></a>
-							<a href="{{ route('exploit.edit', $post->urltext) }}" class="btn btn-success btn-sm" style="margin-top: 1px;"><i class='fa fa-pencil'></i></a>
+							<a href="{{ route('admin.show', $post->urltext) }}" class="btn btn-primary btn-sm" style="margin-top: 1px;"><i class='fa fa-file'></i></a>
+							<a href="{{ route('admin.edit', $post->urltext) }}" class="btn btn-success btn-sm" style="margin-top: 1px;"><i class='fa fa-pencil'></i></a>
 						</td>
 					</tr>
 

@@ -26,7 +26,7 @@ class HackersLoginController extends Controller
         ]);
 
     	if (Auth::guard('hacker')->attempt(['user' => $request->user, 'password' => $request->password], $request->remember)) {
-    		return redirect()->intended(route('exploit.index'));
+    		return redirect()->intended(route('admin.index'));
     	}
 
     	return redirect()->back()->withInput($request->only('user', 'remember'));
@@ -36,6 +36,6 @@ class HackersLoginController extends Controller
     public function logout()
     {
         Auth::guard('hacker')->logout();
-        return redirect()->route('exploit.login');
+        return redirect()->route('admin.login');
     }
 }

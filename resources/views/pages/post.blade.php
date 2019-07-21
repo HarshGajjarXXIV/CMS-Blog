@@ -5,23 +5,7 @@
 @section('metatags')
 
   <meta name="description" content="{!! substr($post->body, 3, 150) !!}" />
-  <meta name="keywords" content="Technosploit, {{ $post->category->name }}@foreach ($post->tags as $tag), {{$tag->name}}@endforeach" />
-
-  <meta property="og:locale" content="en_US"/>
-  <meta property="og:type" content="article" />
-  <meta property="og:title" content="{{ $post->title }} | Technosploit" />
-  <meta property="og:image" content="{{ asset('images/head/'.$post->thumbnail) }}" />
-  <meta property="og:description" content="{!! substr($post->body, 3, 150) !!}" />
-  <meta property="og:url" content="{{ Request::url() }}" />
-  <meta property="og:site_name" content="Technosploit" />
-  <meta property="fb:app_id" content="966242223397117" />
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="{{ Request::url() }}" />
-  <meta name="twitter:title" content="{{ $post->title }} | Technosploit" />
-  <meta name="twitter:description" content="{!! substr($post->body, 3, 150) !!}" />
-  <meta name="twitter:image" content="{{ asset('images/head/'.$post->thumbnail) }}" />
-  <meta name="twitter:site" content="@technosploit" />
+  <meta name="keywords" content="CMS, Blog, {{ $post->category->name }}@foreach ($post->tags as $tag), {{$tag->name}}@endforeach" />
 
 @endsection
 

@@ -104,7 +104,7 @@
 
 			<div class="row">
 				<div class="col-md-6">
-					<a href="{{ route('exploit.edit', $post->urltext) }}" class="btn btn-primary btn-block" style="margin-top: 5px;">Edit</a>
+					<a href="{{ route('admin.edit', $post->urltext) }}" class="btn btn-primary btn-block" style="margin-top: 5px;">Edit</a>
 				</div>
 				<div class="col-md-6">
 					<button type="button" class="btn btn-danger btn-block" data-toggle="modal" data-target="#destroy" style="margin-top: 5px;">Delete</button>		
@@ -124,7 +124,7 @@
 			</div>
 			<div class="modal-footer">
 				<center>
-				{!! Form::open(['route' => ['exploit.destroy', $post->id], 'method' => 'DELETE']) !!}
+				{!! Form::open(['route' => ['admin.destroy', $post->id], 'method' => 'DELETE']) !!}
 				<button type="button" class="btn btn-primary" data-dismiss="modal">No</button>
 				{!! Form::submit('Yes', ['class' => 'btn btn-danger']) !!}
 				{!! Form::close() !!}

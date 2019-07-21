@@ -11,7 +11,7 @@
             </button>
 
             <!-- Branding Image -->
-            <a class="navbar-brand" href="{{ route('exploit.index') }}">
+            <a class="navbar-brand" href="{{ route('admin.index') }}">
                 <strong>LOGO</strong>
             </a>
         </div>
@@ -24,9 +24,9 @@
 
             <!-- Right Side Of Navbar -->
             <ul class="nav navbar-nav navbar-right">
-            	<li class="{{ Request::is('exploit') ? "active" : "" }}"><a href="{{ route('exploit.index') }}"><i class='fa fa-home fa-lg'></i>&nbsp;&nbsp;Home</a></li>
-				<li class="{{ Request::is('exploit/create') ? "active" : "" }}"><a href="{{ route('exploit.create') }}"><i class='fa fa-file fa-lg'></i>&nbsp;&nbsp;Create Post</a></li>
-                <li class="{{ Request::is('exploit/messages') ? "active" : "" }}"><a href="{{ route('messages.index') }}"><i class='fa fa-envelope fa-lg'></i>&nbsp;&nbsp;Messages</a></li>
+            	<li class="{{ Request::is('admin') ? "active" : "" }}"><a href="{{ route('admin.index') }}"><i class='fa fa-home fa-lg'></i>&nbsp;&nbsp;Home</a></li>
+				<li class="{{ Request::is('admin/create') ? "active" : "" }}"><a href="{{ route('admin.create') }}"><i class='fa fa-file fa-lg'></i>&nbsp;&nbsp;Create Post</a></li>
+                <li class="{{ Request::is('admin/messages') ? "active" : "" }}"><a href="{{ route('messages.index') }}"><i class='fa fa-envelope fa-lg'></i>&nbsp;&nbsp;Messages</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                         <i class='fa fa-user fa-lg'></i>&nbsp;&nbsp;{{ Auth::user()->user }} <span class="caret"></span>
@@ -63,7 +63,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="{{ route('exploit.logout') }}">
+                            <a href="{{ route('admin.logout') }}">
                                 <i class='fa fa-sign-out'></i>&nbsp;&nbsp;Logout
                             </a>
                         </li>
